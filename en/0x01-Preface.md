@@ -45,12 +45,12 @@ listed in this report are subject to Oracle's license terms and conditions.
 * **Last changes:**      n/a
 * **Document name:**     n/a
 
-| lead authors  | contributors & reviewers                                            |
-|---------------|---------------------------------------------------------------------|
-| Stefan Oehrli |  |
+| lead authors  | contributors & reviewers |
+|---------------|--------------------------|
+| Stefan Oehrli |                          |
 
 ## Revision History
 
-| Version | Date       | Visa | Comment                                 |
-|---------|------------|------|-----------------------------------------|
-| 0.0.0     | 2021.01.19 | soe  | Initial release |
+| Version | Date       | Visa | Comment         |
+|---------|------------|------|-----------------|
+| 0.0.0   | 2021.01.19 | soe  | Initial release |

@@ -1,5 +1,6 @@
 # Appendix A: References
 
+<!-- markdownlint-disable MD013 -->
 The following references are useful in the context of the Trivadis CPU Report and have been helpful in creating this report.
 
 General information on the Oracle Critical Patch Advisory:

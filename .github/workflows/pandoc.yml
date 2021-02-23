@@ -24,6 +24,6 @@ jobs:
     steps:  
     - uses: actions/checkout@v2
     - name: Pandoc Help
-      run: --help
+      run: pandoc --help
     - name: Pandoc Version
-      run: -version
+      run: pandoc -version

@@ -5,6 +5,10 @@
 
 A template for Trivadis good practices on various technologies
 
+## Latest Builds
+
+Latest Builds [Generated Documents](https://nightly.link/Trivadis/good-practice-template/workflows/pandoc_builds/main/Generated%20Documents.zip)
+
 ## Files and Folders
 
 - [de](de) German documentation files.

@@ -26,7 +26,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 jobs:
   build_en_docs:
     name: Build english documents
@@ -37,7 +37,7 @@ jobs:
       - name: Create file lists
         run: |
           echo "md_files=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
-          echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $1}')" >> $GITHUB_ENV
+          echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
       
       - name: Build pdf document
         uses: docker://oehrlis/pandoc
@@ -62,8 +62,37 @@ jobs:
           name: English Documents
           path: tvd-${{ env.repository_name }}*
 
-  # build_de_docs:
-  #   name: Build german documents
-
-
+  build_de_docs:
+    name: Build german documents
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Create file lists
+        run: |
+          echo "md_files=$(printf '%s ' de/?x??-*.md)" >> $GITHUB_ENV
+          echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
+      
+      - name: Build pdf document
+        uses: docker://oehrlis/pandoc
+        with:
+          args: >-
+            --pdf-engine=xelatex 
+            --metadata-file=de/metadata.yml
+            --resource-path=images
+            --output=tvd-${{ env.repository_name }}_DE.pdf ${{ env.md_files }}
+      
+      - name: Build docx document
+        uses: docker://oehrlis/pandoc
+        with:
+          args: >-
+            --metadata-file=de/metadata.yml
+            --reference-doc templates/trivadis.docx
+            --resource-path=images
+            --output=tvd-${{ env.repository_name }}_DE.docx ${{ env.md_files }}
+    
+      - uses: actions/upload-artifact@master
+        with:
+          name: English Documents
+          path: tvd-${{ env.repository_name }}*
 # --- EOF -------------------------------------------------------------------

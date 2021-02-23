@@ -51,11 +51,10 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir output  # create output dir
-          # this will also include README.md
-          echo "::set-env name=FILELIST::$(printf '"%s" ' en/?x??-*.md)"
+          echo "md_files=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --output=output/result.pdf ${{ env.FILELIST }}
+          args: --output=output/result.pdf "${{ env.md_files }}"
       - uses: actions/upload-artifact@master
         with:
           name: output

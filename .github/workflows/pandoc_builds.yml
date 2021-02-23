@@ -1,0 +1,67 @@
+# ----------------------------------------------------------------------------
+# Trivadis AG, Infrastructure Managed Services
+# Saegereistrasse 29, 8152 Glattbrugg, Switzerland
+# ----------------------------------------------------------------------------
+# Name.......: mdlint.yaml 
+# Author.....: Stefan Oehrli (oes) stefan.oehrli@trivadis.com
+# Editor.....: Stefan Oehrli
+# Date.......: 2021.02.23
+# Revision...: 
+# Purpose....: Markdown lint workflow for GitHub
+# Notes......: --
+# Reference..: https://github.com/DavidAnson/markdownlint
+# ----------------------------------------------------------------------------
+name: Document Build Actions
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '.github/**'
+
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - '.github/**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  build_en_docs:
+    name: Build english documents
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Create file lists
+        run: |
+          echo "md_files=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
+          echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $1}')" >> $GITHUB_ENV
+      
+      - name: Build pdf document
+        uses: docker://oehrlis/pandoc
+        with:
+          args: >-
+            --pdf-engine=xelatex 
+            --metadata-file=en/metadata.yml
+            --resource-path=images
+            --output=tvd-${{ env.repository_name }}_EN.pdf ${{ env.md_files }}
+      
+      - name: Build docx document
+        uses: docker://oehrlis/pandoc
+        with:
+          args: >-
+            --metadata-file=en/metadata.yml
+            --reference-doc templates/trivadis.docx
+            --resource-path=images
+            --output=tvd-${{ env.repository_name }}_EN.docx ${{ env.md_files }}
+    
+      - uses: actions/upload-artifact@master
+        with:
+          name: English Documents
+          path: tvd-${{ env.repository_name }}*
+
+  # build_de_docs:
+  #   name: Build german documents
+
+
+# --- EOF -------------------------------------------------------------------

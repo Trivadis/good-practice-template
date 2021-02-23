@@ -54,7 +54,7 @@ jobs:
           echo "md_files=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --pdf-engine=xelatex --to=pdf --metadata-file=en/metadata.yml --output=output/result.pdf "${{ env.md_files }}"
+          args: --pdf-engine=xelatex --to=pdf --metadata-file=en/metadata.yml --output=output/result.pdf ${{ env.md_files }}
       - uses: actions/upload-artifact@master
         with:
           name: output

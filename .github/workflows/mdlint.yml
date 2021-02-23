@@ -43,5 +43,9 @@ jobs:
       - name: markdownlint-cli2-action
         # You may pin to the exact commit or the version.
         # uses: DavidAnson/markdownlint-cli2-action@df5e41bfe87014dffa695c68b9fb66565e43140a
-        uses: DavidAnson/markdownlint-cli2-action@v2.0.0
- 
+        uses: DavidAnson/markdownlint-cli2-action@v2
+        with:
+          globs: |
+            **/*.md
+            ! CHANGELOG.md
+# --- EOF -------------------------------------------------------------------

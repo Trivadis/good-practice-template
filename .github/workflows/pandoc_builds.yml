@@ -12,7 +12,13 @@
 # Reference..: https://github.com/DavidAnson/markdownlint
 # ----------------------------------------------------------------------------
 name: Document Build Actions
-  on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '.github/**'
+
+  pull_request:
     branches: [ main ]
     paths-ignore:
       - '.github/**'

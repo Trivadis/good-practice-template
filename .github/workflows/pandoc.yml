@@ -39,12 +39,25 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: oehrlis/pandoc
-      options: -v "$PWD":/workdir:z
-    steps:  
-    - uses: actions/checkout@v2
-    - name: Pandoc Help
-      run:  pandoc --metadata-file=en/metadata.yml -o test.pdf ?x??-*.md
-    - name: Pandoc Version
-      run: pandoc --version
+    # steps:  
+    # - uses: actions/checkout@v2
+    # - name: Pandoc Help
+    #   run:  pandoc --metadata-file=en/metadata.yml -o test.pdf ?x??-*.md
+    #   options: -v "$PWD":/workdir:z
+    # - name: Pandoc Version
+    #   run: pandoc --version
 
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir output  # create output dir
+          # this will also include README.md
+          echo "::set-env name=FILELIST::$(printf '"%s" ' en/?x??-*.md)"
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/result.pdf ${{ env.FILELIST }}
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
 # --- EOF -------------------------------------------------------------------

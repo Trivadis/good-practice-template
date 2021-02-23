@@ -13,7 +13,6 @@
 # ----------------------------------------------------------------------------
 name: Document Build Actions
 
-
 on:
   push:
     branches: [ main ]
@@ -32,68 +31,67 @@ jobs:
   build_en_docs:
     name: Build english documents
     runs-on: ubuntu-latest
+    env:
+      LANGUAGE:         en
+      MD_FILES:         $(printf '%s ' en/?x??-*.md)
+      REPOSITORY_NAME:  $(echo '${{ github.repository }}' | awk -F '/' '{print $2}')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Create file lists
-        run: |
-          echo "md_files=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
-          echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
-      
       - name: Build pdf document
         uses: docker://oehrlis/pandoc
         with:
           args: >-
             --pdf-engine=xelatex 
-            --metadata-file=en/metadata.yml
+            --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --resource-path=images
-            --output=tvd-${{ env.repository_name }}_EN.pdf ${{ env.md_files }}
+            --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.pdf ${{ env.MD_FILES }}
       
       - name: Build docx document
         uses: docker://oehrlis/pandoc
         with:
           args: >-
-            --metadata-file=en/metadata.yml
+            --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --reference-doc templates/trivadis.docx
             --resource-path=images
-            --output=tvd-${{ env.repository_name }}_EN.docx ${{ env.md_files }}
+            --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.docx ${{ env.MD_FILES }}
     
       - uses: actions/upload-artifact@master
         with:
-          name: English Documents
-          path: tvd-${{ env.repository_name }}*
+          name: Generated Documents
+          path: tvd-${{ env.REPOSITORY_NAME }}*
 
-  build_de_docs:
-    name: Build german documents
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Create file lists
-        run: |
-          echo "md_files=$(printf '%s ' de/?x??-*.md)" >> $GITHUB_ENV
-          echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
+#   build_de_docs:
+#     name: Build german documents
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
+#       - name: Create file lists
+#         run: |
+#           echo "md_files=$(printf '%s ' de/?x??-*.md)" >> $GITHUB_ENV
+#           echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
       
-      - name: Build pdf document
-        uses: docker://oehrlis/pandoc
-        with:
-          args: >-
-            --pdf-engine=xelatex 
-            --metadata-file=de/metadata.yml
-            --resource-path=images
-            --output=tvd-${{ env.repository_name }}_DE.pdf ${{ env.md_files }}
+#       - name: Build pdf document
+#         uses: docker://oehrlis/pandoc
+#         with:
+#           args: >-
+#             --pdf-engine=xelatex 
+#             --metadata-file=de/metadata.yml
+#             --resource-path=images
+#             --output=tvd-${{ env.repository_name }}_de.pdf ${{ env.md_files }}
       
-      - name: Build docx document
-        uses: docker://oehrlis/pandoc
-        with:
-          args: >-
-            --metadata-file=de/metadata.yml
-            --reference-doc templates/trivadis.docx
-            --resource-path=images
-            --output=tvd-${{ env.repository_name }}_DE.docx ${{ env.md_files }}
+#       - name: Build docx document
+#         uses: docker://oehrlis/pandoc
+#         with:
+#           args: >-
+#             --metadata-file=de/metadata.yml
+#             --reference-doc templates/trivadis.docx
+#             --resource-path=images
+#             --output=tvd-${{ env.repository_name }}_de.docx ${{ env.md_files }}
     
-      - uses: actions/upload-artifact@master
-        with:
-          name: English Documents
-          path: tvd-${{ env.repository_name }}*
-# --- EOF -------------------------------------------------------------------
+#       - uses: actions/upload-artifact@master
+#         with:
+#           name: Generated Documents
+#           path: tvd-${{ env.repository_name }}*
+# # --- EOF -------------------------------------------------------------------

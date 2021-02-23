@@ -65,7 +65,7 @@ jobs:
           path: tvd-${{ env.REPOSITORY_NAME }}*
 
   build_de_docs:
-    name: Build english documents
+    name: Build german documents
     runs-on: ubuntu-latest
     env:
       LANGUAGE: de

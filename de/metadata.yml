@@ -31,7 +31,7 @@ listings-disable-line-numbers: true
 titlepage: true
 toc: true
 toc-own-page: true
-toc-title: Table of Contents
+toc-title: Inhaltsverzeichnis
 toc-depth: 2
 numbersections: true
 #links-as-notes: true

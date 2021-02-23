@@ -10,21 +10,21 @@
 # Purpose....: Markdown lint workflow for GitHub
 # Notes......: --
 # Reference..: https://github.com/DavidAnson/markdownlint
-# ----------------------------------------------------------------------------
-name: pandoc
-on:
-  push:
-    branches: [ main ]
-    paths-ignore:
-      - '.github/**'
+# # ----------------------------------------------------------------------------
+# name: pandoc
+# on:
+#   push:
+#     branches: [ main ]
+#     paths-ignore:
+#       - '.github/**'
 
-  pull_request:
-    branches: [ main ]
-    paths-ignore:
-      - '.github/**'
+#   pull_request:
+#     branches: [ main ]
+#     paths-ignore:
+#       - '.github/**'
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+#   # Allows you to run this workflow manually from the Actions tab
+#   workflow_dispatch:
 
 # jobs:
   # build_documents:
@@ -47,32 +47,32 @@ on:
   #         path: result.pdf
 
 
-jobs:
-  build_documents:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Create file lists
-        run: |
-          echo "md_files_en=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
-          echo "md_files_de=$(printf '%s ' de/?x??-*.md)" >> $GITHUB_ENV
-      - name: Build english pdf documentation
-        uses: docker://oehrlis/pandoc
-        with:
-          args: >-
-            --pdf-engine=xelatex 
-            --metadata-file=en/metadata.yml 
-            --output=trivadis-good-practice-template_EN.pdf ${{ env.md_files_en }}
-      - name: Build german pdf documentation
-        uses: docker://oehrlis/pandoc
-        with:
-          args: >-
-            --pdf-engine=xelatex 
-            --metadata-file=de/metadata.yml 
-            --output=trivadis-good-practice-template_DE.pdf ${{ env.md_files_de }}
-      - uses: actions/upload-artifact@master
-        with:
-          name: build_documents
-          path: trivadis-good-practice-template_??.pdf
+# jobs:
+#   build_documents:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
+#       - name: Create file lists
+#         run: |
+#           echo "md_files_en=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
+#           echo "md_files_de=$(printf '%s ' de/?x??-*.md)" >> $GITHUB_ENV
+#       - name: Build english pdf documentation
+#         uses: docker://oehrlis/pandoc
+#         with:
+#           args: >-
+#             --pdf-engine=xelatex 
+#             --metadata-file=en/metadata.yml 
+#             --output=trivadis-good-practice-template_EN.pdf ${{ env.md_files_en }}
+#       - name: Build german pdf documentation
+#         uses: docker://oehrlis/pandoc
+#         with:
+#           args: >-
+#             --pdf-engine=xelatex 
+#             --metadata-file=de/metadata.yml 
+#             --output=trivadis-good-practice-template_DE.pdf ${{ env.md_files_de }}
+#       - uses: actions/upload-artifact@master
+#         with:
+#           name: build_documents
+#           path: trivadis-good-practice-template_??.pdf
 # --- EOF -------------------------------------------------------------------

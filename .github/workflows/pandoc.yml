@@ -26,4 +26,4 @@ jobs:
     - name: Pandoc Help
       run: pandoc --help
     - name: Pandoc Version
-      run: pandoc -version
+      run: pandoc --version

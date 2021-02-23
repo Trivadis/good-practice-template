@@ -56,6 +56,7 @@ jobs:
       - name: Create file lists
         run: |
           echo "md_files_en=$(printf '%s ' en/?x??-*.md)" >> $GITHUB_ENV
+          echo "md_files_de=$(printf '%s ' de/?x??-*.md)" >> $GITHUB_ENV
       - name: Build english pdf documentation
         uses: docker://oehrlis/pandoc
         with:
@@ -63,6 +64,13 @@ jobs:
             --pdf-engine=xelatex 
             --metadata-file=en/metadata.yml 
             --output=trivadis-good-practice-template_EN.pdf ${{ env.md_files_en }}
+      - name: Build german pdf documentation
+        uses: docker://oehrlis/pandoc
+        with:
+          args: >-
+            --pdf-engine=xelatex 
+            --metadata-file=de/metadata.yml 
+            --output=trivadis-good-practice-template_DE.pdf ${{ env.md_files_de }}
       - uses: actions/upload-artifact@master
         with:
           name: build_documents

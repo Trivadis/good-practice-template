@@ -15,16 +15,16 @@
 # Modified...:
 # see git revision history for more information on changes/updates
 # ---------------------------------------------------------------------------
-title: "Trivadis Terraform Best Practice"
-subtitle: Good and best practices for Terraform configurations
+title: "Trivadis Good Practice Guide Template"
+subtitle: Template for Trivadis Good and Best Practice Guide for XYZ 
 author: 
 - Stefan Oehrli
-- Daniel Hillinger
 # date is set by pandoc, uncomment the date line to explicitly set a date
 #date: 2020 November 06
 tvddocversion: 0.1
 
 # - Page settings -----------------------------------------------------------
+lang: en
 papersize: a4 
 istings: true
 listings-disable-line-numbers: true

@@ -39,11 +39,10 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: oehrlis/pandoc
-      args: -v "$PWD":/workdir:z
     steps:  
     - uses: actions/checkout@v2
     - name: Pandoc Help
-      run: pandoc --metadata-file=en/metadata.yml -o test.pdf ?x??-*.md
+      run:  -v "$PWD":/workdir:z pandoc --metadata-file=en/metadata.yml -o test.pdf ?x??-*.md
     - name: Pandoc Version
       run: pandoc --version
 

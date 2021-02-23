@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: oehrlis/pandoc
-      args: -v "$PWD":/workdir:z
+      options: -v "$PWD":/workdir:z
     steps:  
     - uses: actions/checkout@v2
     - name: Pandoc Help

@@ -2,12 +2,12 @@
 # Trivadis AG, Infrastructure Managed Services
 # Saegereistrasse 29, 8152 Glattbrugg, Switzerland
 # ----------------------------------------------------------------------------
-# Name.......: mdlint.yaml 
+# Name.......: pandoc_builds.yaml 
 # Author.....: Stefan Oehrli (oes) stefan.oehrli@trivadis.com
 # Editor.....: Stefan Oehrli
 # Date.......: 2021.02.23
 # Revision...: 
-# Purpose....: Markdown lint workflow for GitHub
+# Purpose....: Pandoc build workflow to generate the different documentation
 # Notes......: --
 # Reference..: https://github.com/DavidAnson/markdownlint
 # ----------------------------------------------------------------------------
@@ -98,5 +98,6 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: Generated Documents
+          job_alias: latest
           path: tvd-${{ env.REPOSITORY_NAME }}*
 # --- EOF -------------------------------------------------------------------

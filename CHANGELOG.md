@@ -15,10 +15,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add draft version of AUTHOR_GUIDE.
 - Add draft version of CODE_OF_CONDUCT.
 - Add draft version of CONTRIBUTING.
+- Add Trivadis LOGO.
+- Add local Template for TeX / LaTeX.
+- Add local Template for HTML.
+- Add draft version of english docs.
+- Add draft version of english docs.
 
 ### Changed
 
 - exclude markdownlint MD013 in CODE_OF_CONDUCT.
+- update [README](templates/README.md)
 
 ## [0.0.1] - 2021-02-25
 

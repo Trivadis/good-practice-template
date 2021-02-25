@@ -1,7 +1,8 @@
-# Images and Logo Files
+# Template Files
 
-This folder contains various images and logo files that are used in this good
-practice guide. Make sure to include the proper resource path in you markdown
-files to either display the images in markdown as well to generate the different
- output formats using pandoc. It may be necessary to use the pandoc parameter
- `--resource-path`.
+This folder contains various template files used to generate the different
+formats. The templates are based on the Trivadis corporate identity. The
+original templates are either in the container
+[oehrlis/pandoc](https://hub.docker.com/r/oehrlis/pandoc/builds) or in the
+GitHub repository [oehrlis/pandoc](https://github.com/oehrlis/pandoc_template).
+It is prudent to update these local templates from time to time.

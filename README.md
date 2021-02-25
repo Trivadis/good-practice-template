@@ -24,7 +24,7 @@ Latest Builds [Generated Documents](https://nightly.link/Trivadis/good-practice-
 
 ## Releases and Versions
 
-You find all official releases and release information on the GitHub release page [here](https://github.com/Trivadis/good-practice-template/releases).
+You find all official releases and release information on the GitHub release page [here](https://github.com/Trivadis/good-practice-template/releases). As well documented in the [CHANGELOG.md](CHANGELOG.md).
 
 The versioning and release tags follow the [semantic versioning](https://semver.org/).
 A version number is specified by MAJOR.MINOR.PATCH, increase the:

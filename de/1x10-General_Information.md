@@ -1,5 +1,5 @@
 # Introduction
-
+<!-- markdownlint-configure-file { "MD013": { "tables": false } } -->
 This document describes rules and recommendations for developing applications
 using the PL/SQL & SQL Language.
 
@@ -33,28 +33,15 @@ method, independent of the language and source code analysis tools.
 
 ### Keywords used
 
-+-------------+----------------------------------------------------------------+
-| Keyword     | Meaning                                                        |
-+=============+================================================================+
-+-------------+----------------------------------------------------------------+
-| Always      | Emphasizes this rule must be enforced.                         |
-+-------------+----------------------------------------------------------------+
-| Never       | Emphasizes this action must not happen.                        |
-+-------------+----------------------------------------------------------------+
-| Avoid       | Emphasizes that the action should be prevented, but some       |
-|             | exceptions may exist.                                          |
-+-------------+----------------------------------------------------------------+
-| Try         | Emphasizes that the rule should be attempted whenever possible |
-|             | and appropriate.                                               |
-+-------------+----------------------------------------------------------------+
-| Example     | Precedes text used to illustrate a rule or a recommendation.   |
-+-------------+----------------------------------------------------------------+
-| Reason      | Explains the thoughts and purpose behind a rule or a           |
-|             | recommendation.                                                |
-+-------------+----------------------------------------------------------------+
-| Restriction | Describes the circumstances to be fulfilled to make use of a   |
-|             | rule.                                                          |
-+-------------+----------------------------------------------------------------+
+| Keyword     | Meaning                                                                         |
+|-------------|---------------------------------------------------------------------------------|
+| Always      | Emphasizes this rule must be enforced.                                          |
+| Never       | Emphasizes this action must not happen.                                         |
+| Avoid       | Emphasizes that the action should be prevented, but some exceptions may exist.  |
+| Try         | Emphasizes that the rule should be attempted whenever possible and appropriate. |
+| Example     | Precedes text used to illustrate a rule or a recommendation.                    |
+| Reason      | Explains the thoughts and purpose behind a rule or a recommendation.            |
+| Restriction | Describes the circumstances to be fulfilled to make use of a rule.              |
 
 ### Validator support
 

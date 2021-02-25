@@ -1,6 +1,8 @@
 # Good Practice Kapitel 1
 
-<!-- markdownlint-configure-file { "MD024": { "allow_different_nesting": true } } -->
+<!-- markdownlint-configure-file { "MD024":
+    { "allow_different_nesting": true } }
+-->
 Lorem Ipsum ist einfach ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum
 ist der Standard-Blindtext der Industrie seit dem Jahr 1500, als ein unbekannter
 Drucker eine ein unbekannter Drucker eine Druckfahne nahm und sie zu einem

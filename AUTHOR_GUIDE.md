@@ -1,10 +1,20 @@
 # Author and Release Guide
 
+This guide is work in progress.
+
 ## Document Structure
 
 ### Folders
 
 ### Markdown Files
+
+```html
+<!-- markdownlint-configure-file { "MD013": { "tables": false } } -->
+<!-- markdownlint-disable MD013 -->
+<!-- markdownlint-configure-file { "MD024": { "allow_different_nesting": true } } -->
+```
+
+<https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md>
 
 ### Document Metadata
 

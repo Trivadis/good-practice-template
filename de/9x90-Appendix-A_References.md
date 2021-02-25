@@ -26,7 +26,6 @@ Information about the current Critical Patch Update:
 - Oracle Critical Patch Update January 2021 Documentation Map - MOS Note [2739466.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2739466.1)
 - Critical Patch Update (CPU) Program Jan 2021 Patch Availability Document (PAD) (Doc ID ) [2725756.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2725756.1)
 
-
 Database Security Standards and Best Practice:
 
 - CIS Oracle Database Benchmarks - [https://www.cisecurity.org/benchmark/oracle_database/](https://www.cisecurity.org/benchmark/oracle_database/)

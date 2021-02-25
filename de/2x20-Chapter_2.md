@@ -1,38 +1,40 @@
-# Good Practice Chapter 1
+# Good Practice Kapitel 1
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic
-typesetting, remaining essentially unchanged. It was popularised in the 1960s
-with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including
-versions of Lorem Ipsum.
+<!-- markdownlint-configure-file { "MD024": { "allow_different_nesting": true } } -->
+Lorem Ipsum ist einfach ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum
+ist der Standard-Blindtext der Industrie seit dem Jahr 1500, als ein unbekannter
+Drucker eine ein unbekannter Drucker eine Druckfahne nahm und sie zu einem
+Schriftprobenbuch verarbeitete. Buch. Es hat nicht nur fünf Jahrhunderte
+überlebt, sondern auch den Sprung in den elektronischen Schriftsatz überlebt und
+ist im Wesentlichen unverändert geblieben. Populär wurde sie in den 1960er
+Jahren mit der Veröffentlichung von Letraset-Bögen, die Lorem Ipsum-Passagen
+enthielten, und in jüngerer Zeit mit und in jüngerer Zeit mit
+Desktop-Publishing-Software wie Aldus PageMaker, die Versionen von Lorem Ipsum.
 
-## G-1010: Never XYZ
+## G-1010: Niemals XYZ
 
-### Reason
+### Grund
 
 dd
 
-### Justification
+### Rechtfertigung
 
-Reason for this is:
+Der Grund dafür ist:
 
-1. because 1=1
-2. becasue 2=2
+1. weil 1=1
+2. weil 2=2
 
-### Example (bad)
+### Beispiel (schlecht)
 
-This is an SQL code block
+Dies ist ein SQL-Codeblock
 
 ```SQL
 SELECT file_name FROM dba_data_files;
 ```
 
-### Example (good)
+### Beispiel (gut)
 
-This is an BASH code block
+Dies ist ein BASH-Codeblock
 
 ```BASH
 if [ -z $TEST ]; then
@@ -42,8 +44,47 @@ else
 fi
 ```
 
-### Rating
+### Bewertung
 
-| Priority | ​Impact  |
-|----------|--------|
-| high     | medium |
+| Priorität | Wirkung |
+|-----------|---------|
+| hoch      | mittel  |
+
+## G-1011: Besser
+
+### Grund
+
+dd
+
+### Begründung
+
+Der Grund hierfür ist:
+
+1. Weil 1=1
+2. Weil 2=2
+
+### Beispiel (schlecht)
+
+Dies ist ein SQL-Codeblock
+
+```SQL
+SELECT file_name FROM dba_data_files;
+```
+
+### Beispiel (gut)
+
+Dies ist ein BASH-Codeblock
+
+```BASH
+if [ -z $TEST ]; then
+    echo "\$TEST is empty"
+else
+    echo "\$TEST is defined"
+fi
+```
+
+### Bewertung
+
+| Priorität | Wirkung |
+|-----------|---------|
+| hoch      | mittel  |

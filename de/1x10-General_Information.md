@@ -33,20 +33,34 @@ method, independent of the language and source code analysis tools.
 
 ### Keywords used
 
-| Keyword     | Meaning                                                                         |
-|-------------|---------------------------------------------------------------------------------|
-| Always      | Emphasizes this rule must be enforced.                                          |
-| Never       | Emphasizes this action must not happen.                                         |
-| Avoid       | Emphasizes that the action should be prevented, but some exceptions may exist.  |
-| Try         | Emphasizes that the rule should be attempted whenever possible and appropriate. |
-| Example     | Precedes text used to illustrate a rule or a recommendation.                    |
-| Reason      | Explains the thoughts and purpose behind a rule or a recommendation.            |
-| Restriction | Describes the circumstances to be fulfilled to make use of a rule.              |
++-------------+----------------------------------------------------------------+
+| Keyword     | Meaning                                                        |
++=============+================================================================+
++-------------+----------------------------------------------------------------+
+| Always      | Emphasizes this rule must be enforced.                         |
++-------------+----------------------------------------------------------------+
+| Never       | Emphasizes this action must not happen.                        |
++-------------+----------------------------------------------------------------+
+| Avoid       | Emphasizes that the action should be prevented, but some       |
+|             | exceptions may exist.                                          |
++-------------+----------------------------------------------------------------+
+| Try         | Emphasizes that the rule should be attempted whenever possible |
+|             | and appropriate.                                               |
++-------------+----------------------------------------------------------------+
+| Example     | Precedes text used to illustrate a rule or a recommendation.   |
++-------------+----------------------------------------------------------------+
+| Reason      | Explains the thoughts and purpose behind a rule or a           |
+|             | recommendation.                                                |
++-------------+----------------------------------------------------------------+
+| Restriction | Describes the circumstances to be fulfilled to make use of a   |
+|             | rule.                                                          |
++-------------+----------------------------------------------------------------+
 
 ### Validator support
 
 The tool PL/SQL Cop (see the "Tool Support" chapter) cannot support *all* the
-guidelines in this document. Those guidelines that are *not* supported by PL/SQL Cop validators are marked like this:
+guidelines in this document. Those guidelines that are *not* supported by
+PL/SQL Cop validators are marked like this:
 
 !!! missing "Unsupported in PL/SQL Cop Validators"
     Reason why the specific guideline is not supported by the validators.

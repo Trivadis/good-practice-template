@@ -1,14 +1,18 @@
 # Introduction
 
-This document describes rules and recommendations for developing applications using the PL/SQL & SQL Language.
+This document describes rules and recommendations for developing applications
+using the PL/SQL & SQL Language.
 
 ## Scope
 
-This document applies to the PL/SQL and SQL language as used within ORACLE databases and tools, which access ORACLE databases.
+This document applies to the PL/SQL and SQL language as used within ORACLE
+databases and tools, which access ORACLE databases.
 
 ## Document Conventions
 
-SQALE (Software Quality Assessment based on Lifecycle Expectations) is a method to support the evaluation of a software application source code. It is a generic method, independent of the language and source code analysis tools.
+SQALE (Software Quality Assessment based on Lifecycle Expectations) is a method
+to support the evaluation of a software application source code. It is a generic
+method, independent of the language and source code analysis tools.
 
 ### Severity of the rule
 
@@ -41,7 +45,8 @@ SQALE (Software Quality Assessment based on Lifecycle Expectations) is a method 
 
 ### Validator support
 
-The tool PL/SQL Cop (see the "Tool Support" chapter) cannot support *all* the guidelines in this document. Those guidelines that are *not* supported by PL/SQL Cop validators are marked like this:
+The tool PL/SQL Cop (see the "Tool Support" chapter) cannot support *all* the
+guidelines in this document. Those guidelines that are *not* supported by PL/SQL Cop validators are marked like this:
 
 !!! missing "Unsupported in PL/SQL Cop Validators"
     Reason why the specific guideline is not supported by the validators.
@@ -50,19 +55,27 @@ The PL/SQL Cop repository documents the [details of validator limitations](https
 
 ### Why are standards important
 
-For a machine executing a program, code formatting is of no importance. However, for the human eye, well-formatted code is much easier to read. Modern tools can help to implement format and coding rules.
+For a machine executing a program, code formatting is of no importance. However,
+for the human eye, well-formatted code is much easier to read. Modern tools can
+help to implement format and coding rules.
 
-Implementing formatting and coding standards has the following advantages for PL/SQL development:
+Implementing formatting and coding standards has the following advantages for
+PL/SQL development:
 
-* Well-formatted code is easier to read, analyze and maintain (not only for the author but also for other developers).
-* The developers do not have to define their own guidelines - it is already defined.
-* The code has a structure that makes it easier to avoid making errors.
-* The code is more efficient concerning performance and organization of the whole application.
-* The code is more modular and thus easier to use for other applications.
+- Well-formatted code is easier to read, analyze and maintain (not only for the
+  author but also for other developers).
+- The developers do not have to define their own guidelines - it is already
+  defined.
+- The code has a structure that makes it easier to avoid making errors.
+- The code is more efficient concerning performance and organization of the
+  whole application.
+- The code is more modular and thus easier to use for other applications.
 
 ### We have other standards
 
-This document only defines possible standards. These standards are not written in stone, but are meant as guidelines. If standards already exist, and they are different from those in this document, it makes no sense to change them.
+This document only defines possible standards. These standards are not written
+in stone, but are meant as guidelines. If standards already exist, and they are
+different from those in this document, it makes no sense to change them.
 
 ### We do not agree with all your standards
 
@@ -70,14 +83,28 @@ There are basically two types of standards.
 
 1. Non-controversial
 
-    These standards make sense. There is no reason not to follow them. An example of this category is [G-2150](../../4-language-usage/2-variables-and-types/1-general/g-2150): Avoid comparisons with NULL value, consider using IS [NOT] NULL.
+    These standards make sense. There is no reason not to follow them. An
+    example of this category is
+    [G-2150](../../4-language-usage/2-variables-and-types/1-general/g-2150):
+    Avoid comparisons with NULL value, consider using IS [NOT] NULL.
 
 2. Controversial
 
-    Almost every rule/guideline falls into this category. An example of this category is [3 space indention](../../3-coding-style/coding-style/#rules). - Why not 2 or 4 or even 8? Why not use tabs? You can argue in favor of all these options. In most cases it does not really matter which option you choose. Being consistent is more important. In this case it will make the code easier to read.
+    Almost every rule/guideline falls into this category. An example of this
+    category is [3 space indention](../../3-coding-style/coding-style/#rules). -
+    Why not 2 or 4 or even 8? Why not use tabs? You can argue in favor of all
+    these options. In most cases it does not really matter which option you
+    choose. Being consistent is more important. In this case it will make the
+    code easier to read.
 
-For very controversial rules, we have started to include the reasoning either as a footnote or directly in the text.
+For very controversial rules, we have started to include the reasoning either
+as a footnote or directly in the text.
 
-Usually it is not helpful to open an issue on GitHub to request to change a highly controversial rule such as the one mentioned. For example, use 2 spaces instead of 3 spaces for an indentation. This leads to a discussion where the people in favor of 4 spaces start to argument as well. There is no right or wrong here. You just have to agree on a standard.
+Usually it is not helpful to open an issue on GitHub to request to change a
+highly controversial rule such as the one mentioned. For example, use 2 spaces
+instead of 3 spaces for an indentation. This leads to a discussion where the
+people in favor of 4 spaces start to argument as well. There is no right or
+wrong here. You just have to agree on a standard.
 
-More effective is to fork [this repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines) and amend the standards to fit your needs/expectations.
+More effective is to fork [this repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
+and amend the standards to fit your needs/expectations.

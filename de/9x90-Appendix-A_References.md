@@ -1,7 +1,13 @@
 # Appendix A: References
 
 <!-- markdownlint-disable MD013 -->
-The following references are useful in the context of the Trivadis CPU Report and have been helpful in creating this report.
+
+The purpose of this Markdown file is to provide a references for this
+*Good Practice* Guide. Feel free to adjust it accordingly or omit / remove the
+markdown file.
+
+The following references are useful in the context of the Trivadis CPU Report
+and have been helpful in creating this report.
 
 General information on the Oracle Critical Patch Advisory:
 
@@ -19,14 +25,7 @@ Information about the current Critical Patch Update:
 - Text Form of Oracle Critical Patch Update - [January 2021 Risk Matrices](https://www.oracle.com/security-alerts/cpujan2021verbose.html)
 - Oracle Critical Patch Update January 2021 Documentation Map - MOS Note [2739466.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2739466.1)
 - Critical Patch Update (CPU) Program Jan 2021 Patch Availability Document (PAD) (Doc ID ) [2725756.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2725756.1)
-- Database PSU/BP/Update/Revision - Known Issues Master Note - MOS Note [1227443.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=1227443.1)
-- Known Issues for Oracle WebLogic Server (OWLS) 12.1.3.0.X Patch Set Updates - MOS Note [2137518.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2137518.1)
-- Known Issues for Oracle WebLogic Server (OWLS) 12.2.1.3.X Patch Set Updates - MOS Note [2350415.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2350415.1)
-- WebLogic Server PSU - Popular Known Issues - MOS Note [2458832.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2458832.1)
-- 12.1.0.2 Patch Set - Availability and Known Issues - MOS Note [1683799.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=1683799.1)
-- 12.2.0.1 Base Release - Availability and Known Issues - MOS Note [2239820.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2239820.1)
-- 18.0.0.0 Base Release - Availability and Known Issues - MOS Note [2387295.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2387295.1)
-- 19.0.0.0 Base Release - Availability and Known Issues - MOS Note [2527930.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2527930.1)
+
 
 Database Security Standards and Best Practice:
 

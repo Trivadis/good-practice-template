@@ -1,5 +1,9 @@
 # Appendix B: Glossary
 
+The purpose of this Markdown file is to provide a glossary for this
+*Good Practice* Guide. Feel free to adjust it accordingly or omit / remove the
+markdown file.
+
 - **API** – Application programming interface
 - **CA** – Certificate Authority
 - **CDB** - Oracle Container Database respectively *cdb$root*

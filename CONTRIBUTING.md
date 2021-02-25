@@ -1,5 +1,5 @@
 # Contribution guide
-
+<!-- markdownlint-disable MD013 -->
 Trivadis welcomes contributions to this repository from anyone.
 
 If you want to submit a pull request to fix a bug or improve an existing good practice, please open an issue first and link to that issue when you submit your pull request.

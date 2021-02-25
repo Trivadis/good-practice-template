@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - This CHANGELOG file to keep changes documented.
+- Add draft version of AUTHOR_GUIDE.
+- Add draft version of CODE_OF_CONDUCT.
 
 ### Changed
 

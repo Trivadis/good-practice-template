@@ -11,9 +11,9 @@ The official release documents are always attached to the releases. See also the
 [release](https://github.com/Trivadis/good-practice-template/releases) page of
 this repository.
 
-- Word document [en](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_en.docx), [de](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_de.docx)
-- PDF document [en](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_en.pdf), [de](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_de.pdf)
-- [Source code](https://github.com/Trivadis/good-practice-template/archive/v0.0.1.zip/)
+- Word document [en](https://github.com/Trivadis/good-practice-template/releases/download/v0.1.0/tvd-good-practice-template_en.docx), [de](https://github.com/Trivadis/good-practice-template/releases/download/v0.1.0/tvd-good-practice-template_de.docx)
+- PDF document [en](https://github.com/Trivadis/good-practice-template/releases/download/v0.1.0/tvd-good-practice-template_en.pdf), [de](https://github.com/Trivadis/good-practice-template/releases/download/v0.1.0/tvd-good-practice-template_de.pdf)
+- [Source code](https://github.com/Trivadis/good-practice-template/archive/v0.1.0.zip/)
 
 Nightly Builds respectively builds on commit are attached as artefacts to the
 GitHub workflow, see [Generated Documents](https://nightly.link/Trivadis/good-practice-template/workflows/pandoc_builds/main/Generated%20Documents.zip).

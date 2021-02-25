@@ -38,7 +38,7 @@ numbersections: true
 linkcolor: blue
 geometry:
 - top=20mm
-- bottom=20mm
+- bottom=25mm
 titlepage-rule-height: 0
 #header-includes: \setcounter{page}{0} # set page count to 0 for title page
 
@@ -57,7 +57,7 @@ monofont: Courier New
 
 # - Logo settings -----------------------------------------------------------
 # Local logo
-#logo: doc/images/TVDLogo2019.eps
+# logo: images/TVDLogo2019.eps
 # Container logo
 logo: /trivadis/images/TVDLogo2019.eps
 # --- EOF --------------------------------------------------------------------    

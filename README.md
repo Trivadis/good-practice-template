@@ -1,7 +1,7 @@
 # Trivadis Good Practice Template
 
 <!-- markdownlint-disable MD013 -->
-[![markdown-lint](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml) [![Doc Build](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Trivadis/good-practice-template)
+[![markdown-lint](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml) [![Doc Build](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml)
 
 This repository is a template for various *Good Practice Guidelines*. It contains the necessary structures, base documents and CI pipelines for the automatic creation of these documents. When creating a new *Good Practice Guidelines*, this repository can be used directly as a template. Corresponding links and references in the Markdown files have to be adapted to the new repository afterwards. In general, these are just the links in this [README.md](README.md).
 

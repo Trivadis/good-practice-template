@@ -1,18 +1,14 @@
 # Introduction
 <!-- markdownlint-configure-file { "MD013": { "tables": false } } -->
-This document describes rules and recommendations for developing applications
-using the PL/SQL & SQL Language.
+Add a short introduction to the *Good Practice* guide.
 
 ## Scope
 
-This document applies to the PL/SQL and SQL language as used within ORACLE
-databases and tools, which access ORACLE databases.
+Define Scope of this *Good Practice*
 
 ## Document Conventions
 
-SQALE (Software Quality Assessment based on Lifecycle Expectations) is a method
-to support the evaluation of a software application source code. It is a generic
-method, independent of the language and source code analysis tools.
+Define Documentation convetions.
 
 ### Severity of the rule
 

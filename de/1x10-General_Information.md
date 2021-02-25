@@ -1,111 +1,118 @@
-# Introduction
+# Einführung
 <!-- markdownlint-configure-file { "MD013": { "tables": false } } -->
-This document describes rules and recommendations for developing applications
-using the PL/SQL & SQL Language.
+Fügen Sie eine kurze Einführung in den *Good Practice* Leitfaden ein.
 
 ## Scope
 
-This document applies to the PL/SQL and SQL language as used within ORACLE
-databases and tools, which access ORACLE databases.
+Definieren Sie den Geltungsbereich dieser *Good Practice*
 
-## Document Conventions
+## Dokumentationskonventionen
 
-SQALE (Software Quality Assessment based on Lifecycle Expectations) is a method
-to support the evaluation of a software application source code. It is a generic
-method, independent of the language and source code analysis tools.
+Definieren Sie die Dokumentationskonventionen.
 
-### Severity of the rule
+### Schweregrad der Regel
 
-!!! bug "Blocker"
-    Will or may result in a bug.
+!!! Fehler "Blocker"
+    Wird oder kann zu einem Fehler führen.
 
-!!! danger "Critical"
-    Will have a high/direct impact on the maintenance cost.
+!!! Gefahr "Kritisch"
+    Wird einen hohen/direkten Einfluss auf die Wartungskosten haben.
 
-!!! warning "Major"
-    Will have a medium/potential impact on the maintenance cost.
+!!! Warnung "Wichtig"
+    Wird eine mittlere/potentielle Auswirkung auf die Wartungskosten haben.
 
-!!! tip "Minor"
-    Will have a low impact on the maintenance cost.
+!!! Hinweis "Gering"
+    Wird eine geringe Auswirkung auf die Wartungskosten haben.
 
 !!! info "Info"
-    Very low impact; it is just a remediation cost report.
+    Sehr geringe Auswirkung; es handelt sich nur um einen Sanierungskostenbericht.
 
-### Keywords used
+### Verwendete Schlüsselwörter
 
-| Keyword     | Meaning                                                                         |
-|-------------|---------------------------------------------------------------------------------|
-| Always      | Emphasizes this rule must be enforced.                                          |
-| Never       | Emphasizes this action must not happen.                                         |
-| Avoid       | Emphasizes that the action should be prevented, but some exceptions may exist.  |
-| Try         | Emphasizes that the rule should be attempted whenever possible and appropriate. |
-| Example     | Precedes text used to illustrate a rule or a recommendation.                    |
-| Reason      | Explains the thoughts and purpose behind a rule or a recommendation.            |
-| Restriction | Describes the circumstances to be fulfilled to make use of a rule.              |
+| Schlüsselwort | Bedeutung                                                                                     |
+|---------------|-----------------------------------------------------------------------------------------------|
+| Immer         | Betont, dass diese Regel durchgesetzt werden muss.                                            |
+| Nie           | Betont, dass diese Aktion nicht stattfinden darf.                                             |
+| Vermeiden     | Betont, dass die Aktion verhindert werden soll, aber es kann Ausnahmen geben.                 |
+| Versuchen     | Betont, dass die Regel versucht werden soll, wann immer dies möglich und sinnvoll ist.        |
+| Beispiel      | Steht vor Text, der zur Veranschaulichung einer Regel oder einer Empfehlung dient.            |
+| Begründung    | Erklärt die Gedanken und den Zweck hinter einer Regel oder einer Empfehlung.                  |
+| Einschränkung | Beschreibt die Bedingungen, die erfüllt sein müssen, damit eine Regel angewendet werden kann. |
 
-### Validator support
+### Validator-Unterstützung
 
-The tool PL/SQL Cop (see the "Tool Support" chapter) cannot support *all* the
-guidelines in this document. Those guidelines that are *not* supported by
-PL/SQL Cop validators are marked like this:
+Das Werkzeug PL/SQL Cop (siehe Kapitel "Werkzeugunterstützung") kann nicht
+*alle* Richtlinien in diesem Dokument unterstützen. Richtlinien in diesem
+Dokument unterstützen. Die Richtlinien, die *nicht* von PL/SQL Cop-Validatoren
+nicht unterstützt werden, sind wie folgt gekennzeichnet:
 
-!!! missing "Unsupported in PL/SQL Cop Validators"
-    Reason why the specific guideline is not supported by the validators.
+!!! fehlt "Unsupported in PL/SQL Cop Validators"
+    Grund, warum die spezifische Richtlinie nicht von den Validierern
+    unterstützt wird.
 
-The PL/SQL Cop repository documents the [details of validator limitations](https://github.com/Trivadis/plsql-cop-cli/blob/main/validator-limitations.md#guidelines).
+Das PL/SQL Cop Repository dokumentiert die [Details der Validatoreinschränkungen](https://github.com/Trivadis/plsql-cop-cli/blob/main/validator-limitations.md#guidelines).
 
-### Why are standards important
+### Warum sind Standards wichtig
 
-For a machine executing a program, code formatting is of no importance. However,
-for the human eye, well-formatted code is much easier to read. Modern tools can
-help to implement format and coding rules.
+Für eine Maschine, die ein Programm ausführt, ist die Formatierung des Codes
+nicht von Bedeutung. Jedoch Für das menschliche Auge ist gut formatierter Code
+jedoch viel einfacher zu lesen. Moderne Werkzeuge können helfen, Formatierungs-
+und Kodierungsregeln zu implementieren.
 
-Implementing formatting and coding standards has the following advantages for
-PL/SQL development:
+Die Implementierung von Formatierungs- und Kodierungsregeln hat folgende
+Vorteile für PL/SQL-Entwicklung:
 
-- Well-formatted code is easier to read, analyze and maintain (not only for the
-  author but also for other developers).
-- The developers do not have to define their own guidelines - it is already
-  defined.
-- The code has a structure that makes it easier to avoid making errors.
-- The code is more efficient concerning performance and organization of the
-  whole application.
-- The code is more modular and thus easier to use for other applications.
+- Gut formatierter Code ist leichter zu lesen, zu analysieren und zu pflegen
+  (nicht nur für den  Autor, sondern auch für andere Entwickler).
+- Die Entwickler müssen keine eigenen Richtlinien definieren - es ist bereits
+  definiert.
+- Der Code hat eine Struktur, die es leichter macht, Fehler zu vermeiden.
+- Der Code ist effizienter in Bezug auf Leistung und Organisation der
+  gesamten Anwendung.
+- Der Code ist modularer und damit leichter für andere Anwendungen zu verwenden.
 
-### We have other standards
+### Wir haben andere Standards
 
-This document only defines possible standards. These standards are not written
-in stone, but are meant as guidelines. If standards already exist, and they are
-different from those in this document, it makes no sense to change them.
+Dieses Dokument definiert nur mögliche Standards. Diese Standards sind nicht in
+Stein gegemeisselt, sondern sind als Richtlinien gedacht. Wenn es bereits
+Standards gibt, die sich von denen Wenn es bereits Standards gibt, die sich von
+denen in diesem Dokument unterscheiden, macht es keinen Sinn, sie zu ändern.
 
-### We do not agree with all your standards
+### Wir sind nicht mit allen Ihren Standards einverstanden
 
-There are basically two types of standards.
+Es gibt grundsätzlich zwei Arten von Standards.
 
-1. Non-controversial
+1. Nicht umstritten
 
-    These standards make sense. There is no reason not to follow them. An
-    example of this category is
+    Diese Standards machen Sinn. Es gibt keinen Grund, sie nicht zu befolgen.
+    Ein Beispiel für diese Kategorie ist
     [G-2150](../../4-language-usage/2-variables-and-types/1-general/g-2150):
-    Avoid comparisons with NULL value, consider using IS [NOT] NULL.
+    Vermeiden Sie Vergleiche mit NULL-Wert, erwägen Sie die Verwendung von IS
+    [NOT] NULL.
 
-2. Controversial
+2. Umstritten
 
-    Almost every rule/guideline falls into this category. An example of this
-    category is [3 space indention](../../3-coding-style/coding-style/#rules). -
-    Why not 2 or 4 or even 8? Why not use tabs? You can argue in favor of all
-    these options. In most cases it does not really matter which option you
-    choose. Being consistent is more important. In this case it will make the
-    code easier to read.
+    Fast jede Regel/Richtlinie fällt in diese Kategorie. Ein Beispiel für diese
+    Kategorie ist
+    [3 Leerzeichen Einzug](../../3-coding-style/coding-style/#rules). - Warum
+    nicht 2 oder 4 oder sogar 8? Warum nicht Tabulatoren verwenden? Sie
+    können für alle diese Optionen argumentieren. diese Optionen argumentieren.
+    In den meisten Fällen spielt es keine Rolle, welche Option Sie wählen.
+    Wichtiger ist es, konsistent zu sein. In diesem Fall macht es den Code
+    leichter zu lesen.
 
-For very controversial rules, we have started to include the reasoning either
-as a footnote or directly in the text.
+Bei sehr kontroversen Regeln sind wir dazu übergegangen, die Argumentation
+entweder als Fussnote oder direkt im Text.
 
-Usually it is not helpful to open an issue on GitHub to request to change a
-highly controversial rule such as the one mentioned. For example, use 2 spaces
-instead of 3 spaces for an indentation. This leads to a discussion where the
-people in favor of 4 spaces start to argument as well. There is no right or
-wrong here. You just have to agree on a standard.
+Normalerweise ist es nicht hilfreich, ein Issue auf GitHub zu öffnen, um die
+Änderung einer um die Änderung einer sehr umstrittenen Regel wie der genannten
+zu beantragen. Zum Beispiel, verwenden Sie 2 Leerzeichen anstelle von 3
+Leerzeichen für eine Einrückung zu verwenden. Dies führt zu einer Diskussion,
+in der die Leute, die für 4 Leerzeichen sind, ebenfalls zu argumentieren
+beginnen. Es gibt kein richtig oder falsch. Man muss sich nur auf einen Standard
+einigen.
 
-More effective is to fork [this repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
-and amend the standards to fit your needs/expectations.
+Effektiver ist es,
+[dieses Repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
+zu forken und die Standards so zu ändern, dass sie Ihren
+Bedürfnissen/Erwartungen entsprechen.

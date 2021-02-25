@@ -3,11 +3,20 @@
 <!-- markdownlint-disable MD013 -->
 [![markdown-lint](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml) [![Doc Build](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml)
 
-This repository is a template for various *Good Practice Guidelines*. It contains the necessary structures, base documents and CI pipelines for the automatic creation of these documents. When creating a new *Good Practice Guidelines*, this repository can be used directly as a template. Corresponding links and references in the Markdown files have to be adapted to the new repository afterwards. In general, these are just the links in this [README.md](README.md).
+Welcome to the *Good Practice Template*. This repository is a template for various *Good Practice Guidelines*. It contains the necessary structures, base documents and CI pipelines for the automatic creation of these documents. When creating a new *Good Practice Guidelines*, this repository can be used directly as a template. Corresponding links and references in the Markdown files have to be adapted to the new repository afterwards. In general, these are just the links in this [README.md](README.md).
 
-## Latest Builds
+## Downloads and Latest Builds
 
-Latest Builds [Generated Documents](https://nightly.link/Trivadis/good-practice-template/workflows/pandoc_builds/main/Generated%20Documents.zip)
+The official release documents are always attached to the releases. See also the
+[release](https://github.com/Trivadis/good-practice-template/releases) page of
+this repository.
+
+- Word document [en](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_en.docx), [de](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_de.docx)
+- PDF document [en](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_en.pdf), [de](https://github.com/Trivadis/good-practice-template/releases/download/v0.0.1/tvd-good-practice-template_de.pdf)
+- [Source code](https://github.com/Trivadis/good-practice-template/archive/v0.0.1.zip/)
+
+Nightly Builds respectively builds on commit are attached as artefacts to the
+GitHub workflow, see [Generated Documents](https://nightly.link/Trivadis/good-practice-template/workflows/pandoc_builds/main/Generated%20Documents.zip).
 
 ## Files and Folders
 

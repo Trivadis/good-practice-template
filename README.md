@@ -15,16 +15,16 @@ Latest Builds [Generated Documents](https://nightly.link/Trivadis/good-practice-
 - [en](en) English documentation files.
 - [images](images) Images and logo files.
 - [templates](templates) Various pandoc templates.
-- [AUTHOR_GUIDE.md](AUTHOR_GUIDE.md) General author's guide to *Good Practices*.
+- [AUTHOR_GUIDE](AUTHOR_GUIDE.md) General author's guide to *Good Practices*.
   This has to be adapted to the corresponding guideline.
-- [CHANGELOG.md](CHANGELOG.md) Change log for the *Good Practices*.
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) Code of conduct for the interaction
+- [CHANGELOG](CHANGELOG.md) Change log for the *Good Practices*.
+- [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) Code of conduct for the interaction
   and cooperation within the framework of this project.
-- [CHANGELOG.md](CHANGELOG.md) pandoc templates.
+- [CHANGELOG](CHANGELOG.md) pandoc templates.
 
 ## Releases and Versions
 
-You find all official releases and release information on the GitHub release page [here](https://github.com/Trivadis/good-practice-template/releases). As well documented in the [CHANGELOG.md](CHANGELOG.md).
+You find all official releases and release information on the GitHub release page [here](https://github.com/Trivadis/good-practice-template/releases). As well documented in the [CHANGELOG](CHANGELOG.md).
 
 The versioning and release tags follow the [semantic versioning](https://semver.org/).
 A version number is specified by MAJOR.MINOR.PATCH, increase the:
@@ -46,7 +46,7 @@ Please file your bug reports, enhancement requests, questions and other support 
 
 ## How to Contribute
 
-It is highly recommended to take into account [CONTRIBUTING.md](CONTRIBUTING.md) and [AUTHOR_GUIDE.md](AUTHOR_GUIDE.md) when contributing to this *Good Practice*. However contributing covers the following steps.
+It is highly recommended to take into account [CONTRIBUTING](CONTRIBUTING.md) and [AUTHOR_GUIDE](AUTHOR_GUIDE.md) when contributing to this *Good Practice*. However contributing covers the following steps.
 
 1. Describe your idea by [submitting an issue](https://github.com/Trivadis/good-practice-template/issues/new)
 2. [Fork this respository](https://github.com/Trivadis/good-practice-template/fork)

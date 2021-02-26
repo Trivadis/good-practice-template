@@ -1,7 +1,7 @@
-# ---------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Trivadis AG, Infrastructure Managed Services
 # Saegereistrasse 29, 8152 Glattbrugg, Switzerland
-# ---------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Name.......: matadata.yml
 # Author.....: Stefan Oehrli (oes) stefan.oehrli@trivadis.com
 # Date.......: 2019.11.22
@@ -11,43 +11,59 @@
 # Reference..: --
 # License....: Licensed under the Universal Permissive License v 1.0 as 
 #              shown at http://oss.oracle.com/licenses/upl.
-# ---------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Modified...:
 # see git revision history for more information on changes/updates
-# ---------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 title: "Trivadis Good Practice Guide Template"
 subtitle: Template for Trivadis Good and Best Practice Guide for XYZ 
 author: 
 - Stefan Oehrli
 # date is set by pandoc, uncomment the date line to explicitly set a date
 #date: 2020 November 06
-tvddocversion: 0.1
-
-# - Page settings -----------------------------------------------------------
+tvddocversion: 0.1.0
 lang: en
+
+# - Page settings --------------------------------------------------------------
 papersize: a4 
-istings: true
-listings-disable-line-numbers: true
+geometry:
+- top=25mm
+- bottom=25mm
+- right=20mm
+
+# - Titel Page -----------------------------------------------------------------
 titlepage: true
+titlepage-text-color: 000000
+titlepage-rule-height: 0
+
+# - TOC Config -----------------------------------------------------------------
 toc: true
 toc-own-page: true
 toc-title: Table of Contents
 toc-depth: 2
-numbersections: true
-#links-as-notes: true
-linkcolor: blue
-geometry:
-- top=20mm
-- bottom=25mm
-titlepage-rule-height: 0
-#header-includes: \setcounter{page}{0} # set page count to 0 for title page
 
+# - List of Tables / Figures ---------------------------------------------------
+# lof: true
+# lof-own-page: false
+# lot: true
+# lot-own-page: false
+
+numbersections: true
+links-as-notes: true
+linkcolor: blue
+
+# - Listings -------------------------------------------------------------------
+listings: true
+listings-disable-line-numbers: true
+code-block-font-size: \scriptsize
+
+#header-includes: \setcounter{page}{0} # set page count to 0 for title page
 header-includes: |
     \setcounter{page}{0} 
     \usepackage{sectsty}
     \sectionfont{\clearpage}
     
-# - Font settings -----------------------------------------------------------
+# - Font settings --------------------------------------------------------------
 # due to an issue with XeLaTeX with images in docker container the font family
 # has to be set to a sanserif font like Helvetica (helvet)
 # fontfamily: helvet
@@ -55,9 +71,9 @@ header-includes: |
 mainfont: Nunito Sans SemiBold
 monofont: Courier New
 
-# - Logo settings -----------------------------------------------------------
+# - Logo settings --------------------------------------------------------------
 # Local logo
 # logo: images/TVDLogo2019.eps
 # Container logo
 logo: /trivadis/images/TVDLogo2019.eps
-# --- EOF --------------------------------------------------------------------    
+# --- EOF ----------------------------------------------------------------------    

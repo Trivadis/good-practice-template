@@ -57,11 +57,20 @@ listings: true
 listings-disable-line-numbers: true
 code-block-font-size: \scriptsize
 
-#header-includes: \setcounter{page}{0} # set page count to 0 for title page
+# - LaTeX config ---------------------------------------------------------------
 header-includes: |
-    \setcounter{page}{0} 
-    \usepackage{sectsty}
-    \sectionfont{\clearpage}
+  \setcounter{page}{0} 
+  \usepackage{sectsty}
+  \sectionfont{\clearpage}
+  \usepackage{awesomebox}
+
+# - Pandoc Environment ---------------------------------------------------------
+pandoc-latex-environment:
+  noteblock:      [note]
+  tipblock:       [tip]
+  warningblock:   [warning]
+  cautionblock:   [caution]
+  importantblock: [important]
     
 # - Font settings --------------------------------------------------------------
 # due to an issue with XeLaTeX with images in docker container the font family

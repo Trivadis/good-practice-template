@@ -16,6 +16,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [0.2.0] - 2021-03-01
+
+### Added
+
+- Add support for boxes in PDF build using *Pandoc filters*.
+- Add a pptx template [trivadis.pptx](templates/trivadis.pptx)
+- Add a VERSION file for `treeder/bump`
+
+### Changed
+
+- Change `metadata` file and add `header-includes` for PDF boxes.
+- Update LaTeX template [trivadis.tex](templates/trivadis.tex).
+- Update [AUTHOR_GUIDE](AUTHOR_GUIDE.md).
+- Add example for boxes in
+  [1x10-General_Information.md](en/1x10-General_Information.md)
+
+### Fixed
+
+- Fix wrong layout for listings, add `--listings` to pandoc build command
+
+### Removed
+
 ## [0.1.0] - 2021-02-25
 
 ### Added
@@ -47,6 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.1.0
 [0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1

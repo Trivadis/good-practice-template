@@ -168,6 +168,12 @@ As an example, the job entry for the German documentation:
             --reference-doc templates/trivadis.docx
             --resource-path=images
             --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.docx ${{ env.MD_FILES }}
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: Generated Documents
+          job_alias: latest
+          path: tvd-${{ env.REPOSITORY_NAME }}*
 ```
 
 As you can see you only have to adapt the job name `build_de_docs:` and

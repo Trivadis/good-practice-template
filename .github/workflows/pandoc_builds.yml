@@ -49,6 +49,7 @@ jobs:
             --listings
             --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --resource-path=images
+            --filter pandoc-latex-environment
             --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.pdf ${{ env.MD_FILES }}
       # Build DOCX using docker images oehrlis/pandoc
       - name: Build docx document
@@ -87,6 +88,7 @@ jobs:
             --listings
             --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --resource-path=images
+            --filter pandoc-latex-environment
             --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.pdf ${{ env.MD_FILES }}
       # Build DOCX using docker images oehrlis/pandoc
       - name: Build docx document

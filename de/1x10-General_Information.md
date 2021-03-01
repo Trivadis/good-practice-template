@@ -50,7 +50,7 @@ nicht unterstützt werden, sind wie folgt gekennzeichnet:
     Grund, warum die spezifische Richtlinie nicht von den Validierern
     unterstützt wird.
 
-Das PL/SQL Cop Repository dokumentiert die 
+Das PL/SQL Cop Repository dokumentiert die
 [Details der Validatoreinschränkungen](https://github.com/Trivadis/plsql-cop-cli/blob/main/validator-limitations.md#guidelines).
 
 ### Warum sind Standards wichtig

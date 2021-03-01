@@ -120,6 +120,7 @@ a good practice structure.
 ### Mandatory Information
 
 The current documents suggest a good practice structure.
+
 ## Additional Language
 
 This template does have two folders for two languages german [de](de) and

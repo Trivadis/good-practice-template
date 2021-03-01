@@ -58,6 +58,7 @@ Markdown files. e.g. `#` will create a top level heading.
 
 You will find plenty of Markdown references and cheat sheets online e.g.
 [/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 Just be aware, that the Markdown syntax is checked by a GitHub action based on
 Markdown Lint
 ([DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint)).
@@ -87,6 +88,15 @@ rule. The exception has to be added to each file. A few examples:
 It is recommended to add a Markdown Lint to you favorite editor like
 *Visual Studio Code* and the Markdownlint by David Anson.
 
+The latest release does support boxes in PDF generation. See
+[1x10-General_Information](en/1x10-General_Information.md) for an example.
+
+```markdown
+::: note
+**Note** Lorem ipsum dolor ...
+:::
+```
+
 ### Document Metadata
 
 Pandoc document conversion can be configured / customized using metadata either
@@ -102,12 +112,14 @@ of the respective *good practice*.
 
 ## Good Practice Rules
 
-This section still needs some development.
-
 ### Numbering
+
+Each good practice does have to have a unique ID. The current documents suggest
+a good practice structure.
 
 ### Mandatory Information
 
+The current documents suggest a good practice structure.
 ## Additional Language
 
 This template does have two folders for two languages german [de](de) and

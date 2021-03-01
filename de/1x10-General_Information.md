@@ -50,7 +50,8 @@ nicht unterstützt werden, sind wie folgt gekennzeichnet:
     Grund, warum die spezifische Richtlinie nicht von den Validierern
     unterstützt wird.
 
-Das PL/SQL Cop Repository dokumentiert die [Details der Validatoreinschränkungen](https://github.com/Trivadis/plsql-cop-cli/blob/main/validator-limitations.md#guidelines).
+Das PL/SQL Cop Repository dokumentiert die 
+[Details der Validatoreinschränkungen](https://github.com/Trivadis/plsql-cop-cli/blob/main/validator-limitations.md#guidelines).
 
 ### Warum sind Standards wichtig
 
@@ -117,13 +118,14 @@ Effektiver ist es,
 zu forken und die Standards so zu ändern, dass sie Ihren
 Bedürfnissen/Erwartungen entsprechen.
 
-## Box Types
+## Box-Typen
 
-For a list of all available boxes and options visit the [`awesomebox` documentation](https://ctan.org/pkg/awesomebox).
+Eine Liste aller verfügbaren Boxen und Optionen finden Sie in der
+[`awesomebox`-Dokumentation](https://ctan.org/pkg/awesomebox).
 
-```markdown
+```Markdown
 ::: note
-Lorem ipsum dolor ...
+**Note** Lorem ipsum dolor ...
 :::
 ```
 
@@ -135,83 +137,70 @@ Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 :::
 
-```markdown
+```Markdown
 ::: tip
-Lorem ipsum dolor ...
+**Tip** Lorem ipsum dolor ...
 :::
 ```
 
 ::: tip
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Tipp** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 :::
 
-```markdown
+```Markdown
 ::: warning
-Lorem ipsum dolor ...
+**Warnung** Lorem ipsum dolor ...
 :::
 ```
 
 ::: warning
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Warnung** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+liberov quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 :::
 
-```caution
-::: warning
-Lorem ipsum dolor ...
+```Markdown
+::: caution
+**Vorsicht** Lorem ipsum dolor ...
 :::
 ```
 
 ::: caution
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Vorsicht** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+aliquet libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 :::
 
-```markdown
+```Markdown
 ::: important
-Lorem ipsum dolor ...
+**Wichtig** Lorem ipsum dolor ...
 :::
 ```
 
 ::: important
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Wichtig** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 :::
 
-One can also use raw HTML `div` tags to create the custom environments.
-
-```markdown
-<div class="important">
-Lorem ipsum dolor ...
-</div>
-```
-
-<div class="important">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
-</div>
-
-Markdown formatting inside the environments is supported.
+Markdown-Formatierung innerhalb der Umgebungen wird unterstützt.
 
 ::: important
 **Lorem ipsum dolor** sit amet, `consectetur adipiscing` elit.
 
-```
+```JAVA
 if(args.length < 2) {
-	System.out.println("Lorem ipsum dolor sit amet");
+    System.out.println("Lorem ipsum dolor sit amet");
 }
 ```
 

@@ -103,17 +103,18 @@ instead of 3 spaces for an indentation. This leads to a discussion where the
 people in favor of 4 spaces start to argument as well. There is no right or
 wrong here. You just have to agree on a standard.
 
-More effective is to fork [this repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
+More effective is to fork
+[this repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
 and amend the standards to fit your needs/expectations.
-
 
 ## Box Types
 
-For a list of all available boxes and options visit the [`awesomebox` documentation](https://ctan.org/pkg/awesomebox).
+For a list of all available boxes and options visit the
+[`awesomebox` documentation](https://ctan.org/pkg/awesomebox).
 
 ```markdown
 ::: note
-Lorem ipsum dolor ...
+**Note** Lorem ipsum dolor ...
 :::
 ```
 
@@ -127,13 +128,13 @@ felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 
 ```markdown
 ::: tip
-Lorem ipsum dolor ...
+**Tip** Lorem ipsum dolor ...
 :::
 ```
 
 ::: tip
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Tip** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
@@ -141,13 +142,13 @@ felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 
 ```markdown
 ::: warning
-Lorem ipsum dolor ...
+**Warning** Lorem ipsum dolor ...
 :::
 ```
 
 ::: warning
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Warning** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
@@ -155,13 +156,13 @@ felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 
 ```caution
 ::: warning
-Lorem ipsum dolor ...
+**Caution** Lorem ipsum dolor ...
 :::
 ```
 
 ::: caution
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Caution** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
@@ -169,13 +170,13 @@ felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
 
 ```markdown
 ::: important
-Lorem ipsum dolor ...
+**Important** Lorem ipsum dolor ...
 :::
 ```
 
 ::: important
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
-quis lectus elementum fermentum.
+**Important** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+aliquet libero quis lectus elementum fermentum.
 
 Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
 felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.

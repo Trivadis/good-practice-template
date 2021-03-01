@@ -70,6 +70,9 @@ a pull request.
 ### Security-related rules
 
 1. Do not hard-code any passwords or ssh keys.
+1. No information about customers
+1. No particularly sensitive personal data (age, health, etc.)
+1. Whenever possible, please avoid personal data in the documentation
 
 ### Documentation rules
 

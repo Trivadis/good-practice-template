@@ -116,3 +116,105 @@ Effektiver ist es,
 [dieses Repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
 zu forken und die Standards so zu ändern, dass sie Ihren
 Bedürfnissen/Erwartungen entsprechen.
+
+## Box Types
+
+For a list of all available boxes and options visit the [`awesomebox` documentation](https://ctan.org/pkg/awesomebox).
+
+```markdown
+::: note
+Lorem ipsum dolor ...
+:::
+```
+
+::: note
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```markdown
+::: tip
+Lorem ipsum dolor ...
+:::
+```
+
+::: tip
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```markdown
+::: warning
+Lorem ipsum dolor ...
+:::
+```
+
+::: warning
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```caution
+::: warning
+Lorem ipsum dolor ...
+:::
+```
+
+::: caution
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```markdown
+::: important
+Lorem ipsum dolor ...
+:::
+```
+
+::: important
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+One can also use raw HTML `div` tags to create the custom environments.
+
+```markdown
+<div class="important">
+Lorem ipsum dolor ...
+</div>
+```
+
+<div class="important">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+</div>
+
+Markdown formatting inside the environments is supported.
+
+::: important
+**Lorem ipsum dolor** sit amet, `consectetur adipiscing` elit.
+
+```
+if(args.length < 2) {
+	System.out.println("Lorem ipsum dolor sit amet");
+}
+```
+
+*Nam aliquet libero
+quis lectus elementum fermentum.*
+:::

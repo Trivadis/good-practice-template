@@ -41,11 +41,11 @@ right to revise this document at any time without notice.
 * **Document name:**     tvd-good-practice-template_en.pdf
 
 | lead authors  | contributors & reviewers |
-|---------------|--------------------------|
+|---------------|:------------------------------------------------------------:|
 | Stefan Oehrli |                          |
 
 ## Revision History
 
 | Version | Date       | Visa | Comment         |
-|---------|------------|------|-----------------|
+|---------|------------|------|------------------------------------------------|
 | 0.0.1   | 2021.02.25 | soe  | Initial release |

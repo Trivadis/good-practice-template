@@ -105,3 +105,93 @@ wrong here. You just have to agree on a standard.
 
 More effective is to fork [this repository](https://github.com/Trivadis/plsql-and-sql-coding-guidelines)
 and amend the standards to fit your needs/expectations.
+
+
+## Box Types
+
+For a list of all available boxes and options visit the [`awesomebox` documentation](https://ctan.org/pkg/awesomebox).
+
+```markdown
+::: note
+Lorem ipsum dolor ...
+:::
+```
+
+::: note
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```markdown
+::: tip
+Lorem ipsum dolor ...
+:::
+```
+
+::: tip
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```markdown
+::: warning
+Lorem ipsum dolor ...
+:::
+```
+
+::: warning
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```caution
+::: warning
+Lorem ipsum dolor ...
+:::
+```
+
+::: caution
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+```markdown
+::: important
+Lorem ipsum dolor ...
+:::
+```
+
+::: important
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet libero
+quis lectus elementum fermentum.
+
+Fusce aliquet augue sapien, non efficitur mi ornare sed. Morbi at dictum
+felis. Pellentesque tortor lacus, semper et neque vitae, egestas commodo nisl.
+:::
+
+Markdown formatting inside the environments is supported.
+
+::: important
+**Lorem ipsum dolor** sit amet, `consectetur adipiscing` elit.
+
+```JAVA
+if(args.length < 2) {
+    System.out.println("Lorem ipsum dolor sit amet");
+}
+```
+
+*Nam aliquet libero
+quis lectus elementum fermentum.*
+:::

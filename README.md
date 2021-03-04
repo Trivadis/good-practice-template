@@ -29,7 +29,7 @@ GitHub workflow, see [Generated Documents](https://nightly.link/Trivadis/good-pr
 - [CHANGELOG](CHANGELOG.md) Change log for the *Good Practices*.
 - [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) Code of conduct for the interaction
   and cooperation within the framework of this project.
-- [CHANGELOG](CHANGELOG.md) pandoc templates.
+- [CONTRIBUTING](CONTRIBUTING.md) Guide how to contribute to this project.
 
 ## Releases and Versions
 

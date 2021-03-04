@@ -136,6 +136,7 @@ As an example, the job entry for the German documentation:
 
 ```YAML
   build_de_docs:
+    needs: check_docs
     name: Build german documents
     runs-on: ubuntu-latest
     env:
@@ -229,10 +230,9 @@ repository name.
 
 The GitHub repository does have several workflows defined.
 
-| File                                                       | Workflow Name | Purpose                                              |
-|------------------------------------------------------------|---------------|------------------------------------------------------|
-| [mdlint.yml](./.github/workflows/mdlint.yml)               | markdown-lint | Workflow to check the Markdown Syntax.               |
-| [pandoc_builds.yml](./.github/workflows/pandoc_builds.yml) | Doc Build     | Workflow with different jobs to build the documents. |
+| File                                                     | Workflow Name | Purpose                                                        |
+|----------------------------------------------------------|---------------|----------------------------------------------------------------|
+| [doc-pipeline.yml](./.github/workflows/doc-pipeline.yml) | Doc Build     | Workflow with different jobs to check and build the documents. |
 
 The workflow do trigger on any *push* and *pull-request* on the main branch. If
 necessary it can also be triggered manually via GitHub action.

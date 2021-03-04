@@ -1,7 +1,7 @@
 # Trivadis Good Practice Template
 
 <!-- markdownlint-disable MD013 -->
-[![markdown-lint](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/mdlint.yml) [![Doc Build](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/pandoc_builds.yml)
+[![Doc Build](https://github.com/Trivadis/good-practice-template/actions/workflows/doc-pipeline.yml/badge.svg)](https://github.com/Trivadis/good-practice-template/actions/workflows/doc-pipeline.yml)
 
 Welcome to the *Good Practice Template*. This repository is a template for various *Good Practice Guidelines*. It contains the necessary structures, base documents and CI pipelines for the automatic creation of these documents. When creating a new *Good Practice Guidelines*, this repository can be used directly as a template. Corresponding links and references in the Markdown files have to be adapted to the new repository afterwards. In general, these are just the links in this [README.md](README.md).
 
@@ -19,7 +19,7 @@ this repository.
 - [Source code](https://github.com/Trivadis/good-practice-template/archive/v0.1.0.zip/)
 
 Nightly Builds respectively builds on commit are attached as artefacts to the
-GitHub workflow, see [Generated Documents](https://nightly.link/Trivadis/good-practice-template/workflows/pandoc_builds/main/Generated%20Documents.zip).
+GitHub workflow, see [Generated Documents](https://nightly.link/Trivadis/good-practice-template/workflows/doc-pipeline/main/Generated%20Documents.zip).
 
 ## Files and Folders
 

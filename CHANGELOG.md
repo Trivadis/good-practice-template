@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update [AUTHOR_GUIDE](AUTHOR_GUIDE.md) change YAML template for the workflow.
 - Remove dependency on local templates in *Doc Build* workflow.
 - Remove dependency on local templates [AUTHOR_GUIDE](AUTHOR_GUIDE.md).
+- reorganize doc build pipeline to one file [doc-pipeline.yml](.github/workflows/doc-pipeline.yml).
 
 ### Fixed
 
@@ -24,6 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - remove all local templates in [templates](./templates). If local templates are
   necessary, they have to be downlowded from
   [oehrlis/pandoc_template](https://github.com/oehrlis/pandoc_template).
+- remove [mdlint.yml](.github/workflows/mdlint.yml).
+- remove [pandoc_builds.yml](.github/workflows/pandoc_builds.yml).
 
 ## [v0.2.1] - 2021-03-01
 

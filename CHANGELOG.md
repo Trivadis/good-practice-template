@@ -14,10 +14,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Update [CONTRIBUTING](CONTRIBUTING.md) guide and add a few security rules
 - Update [AUTHOR_GUIDE](AUTHOR_GUIDE.md) change YAML template for the workflow.
+- Remove dependency on local templates in *Doc Build* workflow.
+- Remove dependency on local templates [AUTHOR_GUIDE](AUTHOR_GUIDE.md).
 
 ### Fixed
 
 ### Removed
+
+- remove all local templates in [templates](./templates). If local templates are
+  necessary, they have to be downlowded from
+  [oehrlis/pandoc_template](https://github.com/oehrlis/pandoc_template).
 
 ## [v0.2.1] - 2021-03-01
 

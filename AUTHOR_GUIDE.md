@@ -165,10 +165,9 @@ As an example, the job entry for the German documentation:
           args: >-
             --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --listings
-            --reference-doc templates/trivadis.docx
             --resource-path=images
             --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.docx ${{ env.MD_FILES }}
-
+    
       - uses: actions/upload-artifact@master
         with:
           name: Generated Documents
@@ -273,8 +272,7 @@ docker  run --rm -v "$PWD":/workdir:z oehrlis/pandoc \
 ```bash
 docker  run --rm -v "$PWD":/workdir:z oehrlis/pandoc \
 --metadata-file=en/metadata.yml \
---listings --reference-doc /workdir/templates/trivadis.docx \
---resource-path=images \
+--listings --resource-path=images \
 --output=tvd-good-practice-template_en.docx en/?x??-*.md
 ```
 
@@ -283,8 +281,7 @@ docker  run --rm -v "$PWD":/workdir:z oehrlis/pandoc \
 ```bash
 docker  run --rm -v "$PWD":/workdir:z oehrlis/pandoc \
 --metadata-file=en/metadata.yml \
---listings --reference-doc /workdir/templates/trivadis.pptx \
---resource-path=images \
+--listings --resource-path=images \
 --output=tvd-good-practice-template_en.pptx en/[1-8]x??-*.md
 ```
 
@@ -292,7 +289,10 @@ docker  run --rm -v "$PWD":/workdir:z oehrlis/pandoc \
 
 If you do have a local *pandoc* installation including LaTeX, you may also
 generate the corresponding documents directly using `pandoc` via command line.
-But be aware of the necessary requirements. e.g. fonts, LaTeX, etc.
+But be aware of the necessary requirements. e.g. fonts, LaTeX, templates from
+[oehrlis/pandoc_template](https://github.com/oehrlis/pandoc_template) etc. In
+the following examples we do expect, that you have a local copy of the templates
+in the `./templates` folder.
 
 - Generate a PDF document
 

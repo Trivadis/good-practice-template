@@ -5,6 +5,9 @@
 
 Welcome to the *Good Practice Template*. This repository is a template for various *Good Practice Guidelines*. It contains the necessary structures, base documents and CI pipelines for the automatic creation of these documents. When creating a new *Good Practice Guidelines*, this repository can be used directly as a template. Corresponding links and references in the Markdown files have to be adapted to the new repository afterwards. In general, these are just the links in this [README.md](README.md).
 
+
+
+
 ## Downloads and Latest Builds
 
 The official release documents are always attached to the releases. See also the

@@ -58,7 +58,6 @@ jobs:
           args: >-
             --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --listings
-            --reference-doc templates/trivadis.docx
             --resource-path=images
             --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.docx ${{ env.MD_FILES }}
     
@@ -97,7 +96,6 @@ jobs:
           args: >-
             --metadata-file=${{ env.LANGUAGE }}/metadata.yml
             --listings
-            --reference-doc templates/trivadis.docx
             --resource-path=images
             --output=tvd-${{ env.REPOSITORY_NAME }}_${{ env.LANGUAGE }}.docx ${{ env.MD_FILES }}
     

@@ -53,5 +53,6 @@ jobs:
         uses: docker://06kellyjac/markdownlint-cli
         with:
           args: >-
+            -v $PWD:/markdown
             .
 # --- EOF -------------------------------------------------------------------

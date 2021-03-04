@@ -44,18 +44,17 @@ jobs:
 #             **/*.md
 #             ! CHANGELOG.md
 
-  Check_Docs:
-    name: Check Markdown using markdownlint-cli
-    runs-on: ubuntu-latest
-    steps:
-      # Check Markdown using markdownlint-cli from docker images 06kellyjac/markdownlint-cli
-      - name: run markdownlint-cli
-        uses: docker://06kellyjac/markdownlint-cli
-        with:
-<<<<<<< HEAD
-          args: >-
-            .
-=======
-          args: .
->>>>>>> e534c59e2b8227b42417349803a00d9041305483
+  my_markdownlint_job:
+    image:
+      name: 06kellyjac/markdownlint-cli
+      # or to use the image from GitLab rather than Docker Hub
+      # replace it with the line below
+      # name: registry.gitlab.com/06kellyjac/docker_markdownlint-cli:0.27.0-alpine
+      entrypoint:
+        - "/usr/bin/env"
+        - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    before_script:
+      - markdownlint --version
+    script:
+      - markdownlint .
 # --- EOF -------------------------------------------------------------------
